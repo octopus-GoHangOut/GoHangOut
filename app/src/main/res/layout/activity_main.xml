@@ -45,6 +45,7 @@
 
 
     <LinearLayout
+        android:layout_marginTop="40dp"
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="170dp"
@@ -58,36 +59,22 @@
             android:layout_width="200dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="110dp"
-            android:background="@drawable/picture"
+            android:background="@drawable/img"
             android:gravity="center"
             android:scaleType="centerInside" />
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="30dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:text="사용자명"
-            android:textSize="15dp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginLeft="35dp"/>
 
     </LinearLayout>
 
@@ -100,43 +87,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-
-        <TextView
-            android:id="@+id/MyPage_idStr"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
+        <EditText
+            android:id="@+id/Mypage_namestring"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginLeft="50dp"
-            android:background="#CCCCCC"
-            android:gravity="left|center"
-            android:text="아이디"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColorHint="#AAAAAA"
+            android:textColor="#9C27B0"
+            android:autofillHints=""
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_box"
+            android:ems="10"
+            android:hint="아이디"
+            android:inputType="text"
+            android:minHeight="40dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:background="@drawable/round_button"
+            android:layout_width="wrap_content"
+            android:text="중복체크"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
     <LinearLayout
         android:id="@+id/linearLayout6"
         android:layout_width="match_parent"
         android:layout_height="30dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="30dp"
-            android:gravity="center"
-            android:text="사는곳"
-            android:textSize="15dp"
-            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -149,42 +137,34 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
 
-        <TextView
-            android:id="@+id/MyPage_livingstr"
+        <EditText
+            android:id="@+id/Mypage_homestring"
             android:layout_width="300dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginLeft="50dp"
-            android:background="#CCCCCC"
-            android:gravity="left|center"
-            android:text="사는곳"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColorHint="#AAAAAA"
+            android:textColor="#9C27B0"
+            android:autofillHints=""
+            android:background="@drawable/search_box"
+            android:ems="10"
+            android:hint="사는곳"
+            android:inputType="text"
+            android:minHeight="40dp"  />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
 
     <LinearLayout
         android:id="@+id/linearLayout8"
         android:layout_width="match_parent"
         android:layout_height="30dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="55dp"
-            android:gravity="center"
-            android:text="자주가는 여행지"
-            android:textSize="15dp"
-            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -197,21 +177,28 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
 
 
-        <TextView
-            android:id="@+id/favorlocationstr"
+        <EditText
+            android:id="@+id/Mypage_favorstring"
             android:layout_width="300dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginLeft="50dp"
-            android:background="#CCCCCC"
-            android:gravity="left|center"
-            android:text="자주가는곳"
-            android:textSize="30dp"
-            android:textStyle="bold" />
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColorHint="#AAAAAA"
+            android:textColor="#9C27B0"
+            android:autofillHints=""
+            android:background="@drawable/search_box"
+            android:ems="10"
+            android:hint="자주 가는곳"
+            android:inputType="text"
+            android:minHeight="40dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="225dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
@@ -220,42 +207,35 @@
         <TextView
             android:id="@+id/MyPage_logoutbool"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:gravity="center"
             android:text="로그아웃"
-            android:textSize="30dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"/>
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:id="@+id/MyPage_secessionbool"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:text="회원탈퇴"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="5dp"/>
-
-        <TextView
-            android:id="@+id/MyPage_policybool"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="개인정보처리방침"
-            android:textSize="30dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_marginBottom="10dp"/>
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/MyPage_bottomNavibool"
+        <TextView
+            android:id="@+id/MyPage_policybool"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            app:itemBackground="@android:color/white"
-            app:itemTextColor="@color/black"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/bottom_navigation_menu" />
+            android:layout_height="30dp"
+            android:text="개인정보처리방침"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+
 
     </LinearLayout>
 

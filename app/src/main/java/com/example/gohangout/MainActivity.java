@@ -34,9 +34,6 @@ public class MainActivity extends AppCompatActivity {
         myPagePolicybool = findViewById(R.id.MyPage_policybool);
         myPageStorageButton = findViewById(R.id.MyPage_Storagebutton);
 
-        bottomNavigationView = findViewById(R.id.MyPage_bottomNavibool);
-        badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.notification);
-
         setupBadge();
 
         myPagePolicybool.addTextChangedListener(new TextWatcher() {
