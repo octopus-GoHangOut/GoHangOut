@@ -14,7 +14,9 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/Mypage_nameint"
@@ -37,34 +39,30 @@
             android:layout_height="match_parent"
             android:background="#00ff0000"
             android:text="저장"
+            android:visibility="gone"
             android:textColor="@color/pulple"
             android:textSize="15dp" />
-
-
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_marginTop="40dp"
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="200dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.5">
 
         <ImageButton
             android:id="@+id/MyPage_pictureImageButton"
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="110dp"
+            android:layout_marginLeft="140dp"
             android:background="@drawable/img"
             android:gravity="center"
             android:scaleType="centerInside" />
-
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -73,9 +71,8 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintHorizontal_bias="0.5">
     </LinearLayout>
 
     <LinearLayout
@@ -83,20 +80,20 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintHorizontal_bias="0.5">
 
         <EditText
             android:id="@+id/Mypage_namestring"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="80dp"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:textColorHint="#AAAAAA"
-            android:textColor="#9C27B0"
+            android:textColor="@color/black"
             android:autofillHints=""
             android:layout_marginRight="10dp"
             android:background="@drawable/search_box"
@@ -115,7 +112,6 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
-
     <LinearLayout
         android:id="@+id/linearLayout6"
         android:layout_width="match_parent"
@@ -123,9 +119,8 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
-
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintHorizontal_bias="0.5">
     </LinearLayout>
 
     <LinearLayout
@@ -134,19 +129,19 @@
         android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        app:layout_constraintHorizontal_bias="0.5">
 
         <EditText
             android:id="@+id/Mypage_homestring"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="80dp"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:textColorHint="#AAAAAA"
-            android:textColor="#9C27B0"
+            android:textColor="@color/black"
             android:autofillHints=""
             android:background="@drawable/search_box"
             android:ems="10"
@@ -155,7 +150,6 @@
             android:minHeight="40dp"  />
     </LinearLayout>
 
-
     <LinearLayout
         android:id="@+id/linearLayout8"
         android:layout_width="match_parent"
@@ -163,9 +157,8 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
-
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        app:layout_constraintHorizontal_bias="0.5">
     </LinearLayout>
 
     <LinearLayout
@@ -174,19 +167,19 @@
         android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
-
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
+        app:layout_constraintHorizontal_bias="0.5">
 
         <EditText
             android:id="@+id/Mypage_favorstring"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="80dp"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:textColorHint="#AAAAAA"
-            android:textColor="#9C27B0"
+            android:textColor="@color/black"
             android:autofillHints=""
             android:background="@drawable/search_box"
             android:ems="10"
@@ -202,18 +195,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.5">
 
         <TextView
             android:id="@+id/MyPage_logoutbool"
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:gravity="center"
             android:text="로그아웃"
             android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/MyPage_secessionbool"
@@ -234,11 +228,5 @@
             android:textStyle="bold"
             android:gravity="center"
             android:layout_marginBottom="10dp"/>
-
-
-
     </LinearLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
