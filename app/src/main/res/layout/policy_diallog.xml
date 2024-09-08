@@ -40,7 +40,7 @@
 
             <Button
                 android:background="@color/white"
-                android:id="@+id/Mypage_nobool"
+                android:id="@+id/Mypage_nobool1"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:text="취소"
@@ -49,7 +49,7 @@
                 android:textStyle="bold"/>
 
             <Button
-                android:id="@+id/Mypage_yesbool"
+                android:id="@+id/Mypage_yesbool1"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:text="확인"

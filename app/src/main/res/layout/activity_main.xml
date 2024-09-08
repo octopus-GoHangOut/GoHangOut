@@ -9,7 +9,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@
             android:layout_height="match_parent"
             android:background="#00ff0000"
             android:text="저장"
-            android:visibility="gone"
+            android:visibility="invisible"
             android:textColor="@color/pulple"
             android:textSize="15dp" />
     </LinearLayout>
@@ -47,8 +47,8 @@
     <LinearLayout
         android:layout_marginTop="40dp"
         android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -57,10 +57,10 @@
         <ImageButton
             android:id="@+id/MyPage_pictureImageButton"
             android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="140dp"
-            android:background="@drawable/img"
+            android:layout_height="200dp"
             android:gravity="center"
+
+            android:background="@drawable/img"
             android:scaleType="centerInside" />
     </LinearLayout>
 
@@ -77,8 +77,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout5"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
@@ -86,7 +86,7 @@
 
         <EditText
             android:id="@+id/Mypage_namestring"
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="80dp"
@@ -95,7 +95,6 @@
             android:textColorHint="#AAAAAA"
             android:textColor="@color/black"
             android:autofillHints=""
-            android:layout_marginRight="10dp"
             android:background="@drawable/search_box"
             android:ems="10"
             android:hint="아이디"
@@ -104,6 +103,7 @@
             android:textStyle="bold"/>
 
         <Button
+            android:id="@+id/check"
             android:background="@drawable/round_button"
             android:layout_width="wrap_content"
             android:text="중복체크"
@@ -114,7 +114,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout6"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,34 +125,33 @@
 
     <LinearLayout
         android:id="@+id/linearLayout7"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-        app:layout_constraintHorizontal_bias="0.5">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
         <EditText
             android:id="@+id/Mypage_homestring"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="80dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp"
-            android:textColorHint="#AAAAAA"
-            android:textColor="@color/black"
+
             android:autofillHints=""
             android:background="@drawable/search_box"
             android:ems="10"
             android:hint="사는곳"
             android:inputType="text"
-            android:minHeight="40dp"  />
+            android:minHeight="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#AAAAAA" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout8"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -163,8 +162,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout10"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout8"
@@ -172,10 +171,9 @@
 
         <EditText
             android:id="@+id/Mypage_favorstring"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="80dp"
+
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:textColorHint="#AAAAAA"
@@ -189,7 +187,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="225dp"
         android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
